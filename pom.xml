@@ -36,11 +36,11 @@
             <url>http://192.168.1.252:8081/nexus/content/repositories/pipe/</url>
         </repository>
         
-	<snapshot-repository>
+	<snapshotRepository>
             <id>my-nexus-repo</id>
             <name> snapshot-Release </name>
             <url>http://192.168.1.252:8081/nexus/content/repositories/pipe-snap/</url>
-        </snapshot-repository>
+        </snapshotRrepository>
     </distributionManagement>
    <build>
     	<finalName>myproj</finalName>
