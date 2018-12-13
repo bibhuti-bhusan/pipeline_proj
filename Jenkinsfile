@@ -24,6 +24,14 @@ pipeline {
               }
             }
            }
+	   
+	   stage ('install stage') {
+            steps {
+              withMaven(maven: 'maven') {
+                sh 'mvn install'
+              }
+            }
+           }
 
 	   stage ('deployment stage') {
             steps {
