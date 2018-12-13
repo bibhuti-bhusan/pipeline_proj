@@ -29,19 +29,19 @@
             <email>arun.gupta@gmail.com</email>
         </developer>
     </developers>
-    <distributionManagement>
+   <distributionManagement>
         <repository>
-            <id>deployment</id>
-            <name>Internal Releases</name>
-            <url>http://192.168.0.50:8081/nexus/content/repositories/WAR/</url>
+            <id>my-nexus-repo</id>
+            <name> Release </name>
+            <url>http://192.168.1.252:8081/nexus/content/repositories/pipe/</url>
         </repository>
-        <snapshotRepository>
-            <id>deployment</id>
-            <name>Internal Snapshot Releases</name>
-            <url>http://192.168.0.50:8081/nexus/content/repositories/WAR-SNAP/</url>
-        </snapshotRepository>
+        <snapshot-repository>
+            <id>my-nexus-repo</id>
+            <name> snapshot-Release </name>
+            <url>http://192.168.1.252:8081/nexus/content/repositories/pipe-snap/</url>
+        </snapshot-repository>
     </distributionManagement>
-    <build>
+   <build>
     	<finalName>myproj</finalName>
         <pluginManagement>
             <plugins>
